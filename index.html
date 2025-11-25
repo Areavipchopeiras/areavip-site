@@ -118,9 +118,11 @@
       line-height: 60px;
       z-index: 1000;
       text-decoration: none;
-    }
-	h2, ul li, nav a {
+    }/* Corrigido o problema de contraste com um text-shadow preto */
+h2, ul li, nav a {
   color: #d4af37;
+  /* Sombra preta leve: (deslocamento x, deslocamento y, raio do desfoque, cor) */
+  text-shadow: 1px 1px 2px #000;
 }
 	.image-row {
   display: flex;
@@ -332,4 +334,5 @@
 </body>
 
 </html>
+
 
